@@ -1,0 +1,15 @@
+/*#region general css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e8e8e8;
+}
+
+/*#endregion*/

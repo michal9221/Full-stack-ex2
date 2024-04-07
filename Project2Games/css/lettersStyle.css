@@ -1,0 +1,115 @@
+/*#region nav*/
+.return{
+    position: absolute;
+    display: flex;
+    width: 4%;
+    height: fit-content;
+
+    padding: 0.5rem;
+    margin: 1rem;
+    left: 0;
+
+    border: 0.12rem solid #0392a4;
+    border-radius: 0.6rem;
+    background-color: transparent;
+}
+.return img{
+    width: 100%;
+    height: auto;
+    height: auto;
+}
+/*#endregion*/
+
+body{
+    flex-direction: column;
+}
+
+.game {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    background-color: #bdd8db;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+header {
+    font-family: "Comic Sans MS";
+    font-size: 3rem;
+    font-weight: 500;
+    margin: auto;
+}
+
+aside {
+    font-family: "Comic Sans MS";
+    font-size: 1rem;
+    position: absolute;
+    top: 7rem;
+    right: 4rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 1rem
+}
+.success, .level {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: fit-content;
+    margin: 0.5rem auto;
+}
+
+.hr {
+    height: 0.15rem;
+    background-color: #0392a4;
+    border-color: #0392a4;
+}
+
+.level img {
+    width: 4.7rem;
+}
+
+.success img {
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+/*#region letters*/
+.circle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    width: 4.1rem;
+    height: 4.1rem;
+    cursor: pointer;
+    font-family: "Comic Sans MS";
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.input{
+    width: 4rem;
+    height: 2.1rem;
+    font-family: "Open Sans";
+    border: 0.1rem solid #0392a4;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+.input:focus {
+    outline: none; 
+}
+/*#endregion*/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="../css/signUp.css" rel="stylesheet">
+        <link href="../css/generalStyle.css" rel="stylesheet">
+
+        <title>SIGN UP</title>
+    </head>
+
+    <body>
+        <main>
+            <form action="login.html" method="post">
+                <section class="user_info">
+                    <div class="inputs_container">
+                        <input id="user_name" type="text" placeholder="User Name" required>
+                        <input id="phone_number" pattern="05[23458]-[0-9]{7}" title="05x-xxxxxxx" type="tel" placeholder="Phone Number" required>
+                        <input id="email" type="email" pattern="[\w\W\d]*@(gmail.com|.+.co.il)" placeholder="email" title="Email must end with gmail.com or .co.il" required>
+                    </div>
+                    <div class="inputs_container">
+                        <input id="password" type="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" title="Password is 8-10 long and contain lowercase, uppercase letters and numbers">
+                        <input id="authpassword" type="password" placeholder="authpassword" required>
+                        <span id="authpasswordError" class="error-message"></span>
+                    </div>
+                </section>
+                <input class="sign_up" type="submit" value="Sign Up">
+                <span id="existError" class="error-message"></span>
+            </form>
+        </main>
+
+        <script src="..\js\signUp.js"></script>
+
+    </body>
+</html>

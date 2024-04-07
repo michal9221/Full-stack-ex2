@@ -1,0 +1,92 @@
+/*#region nav*/
+.return{
+    position: absolute;
+    display: flex;
+    width: 4%;
+    height: fit-content;
+
+    padding: 0.5rem;
+    margin: 1rem;
+    left: 0;
+
+    border: 0.12rem solid #0392a4;
+    border-radius: 0.6rem;
+    background-color: transparent;
+}
+.return img{
+    width: 100%;
+    height: auto;
+    height: auto;
+}
+/*#endregion*/
+
+/*#region board*/
+
+main{margin: auto 0;}
+
+.board_grid{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: center;
+    gap: 0.4rem;
+    background-color: #0392a4;
+    border-radius: 2rem;
+
+    width: fit-content;
+}
+
+.circle{
+    justify-self: center;
+    align-self: center;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+/*#endregion board*/
+
+.green_circle{
+    background-color: #3ca463 !important;
+}
+
+.red_circle{
+    background-color: #980000ff !important;
+}
+
+/*#region user color*/
+.triangle{
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid black;
+    margin:0.1rem 0.5rem;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+.triangle:hover {
+    opacity: 0.4;
+}
+
+.user_icon{
+    width: 50%;
+    height: 50%;
+}
+
+.user_icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_color{
+    align-self: center;
+    justify-self: center;
+    margin-left: 3rem;
+}
+
+.user_color .circle{
+    margin: 1rem;
+}
+/*#endregion*/
+

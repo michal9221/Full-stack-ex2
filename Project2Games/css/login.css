@@ -1,0 +1,106 @@
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#region sign_in*/
+
+.sign_in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0392a4;
+    border-radius: 4rem;
+    width: 19rem;
+    height: 22rem;
+}
+
+
+.input_container {
+    position: relative;
+    margin-bottom: 20px;
+    margin: 1rem;
+    width: fit-content;
+}
+
+label{
+    position: absolute;
+    font-size: 0.65rem;
+    top: -0.4rem;
+    left: 0.5rem;
+    padding: 0 0.1rem;
+    background-color: #0392a4;
+    font-family: "Open Sans";
+    color: #e8e8e8;
+}
+
+.input_container input{
+    width: 11rem;
+    font-family: "Open Sans";
+    border: 0.05rem solid #e8e8e8;
+}
+
+
+.sign_in input[type="submit"]{
+    border: transparent;
+    border-radius: 1rem;
+    font-family: "Comic Sans MS";
+    margin-top: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.sign_in input[type="submit"]:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+input, button{
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e8e8e8;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none; 
+}
+/*#endregion*/
+
+/*#region ERRORS*/
+.error-message{
+    color: red;
+    font-size: 0.7rem;
+    font-family: "Open Sans";
+}
+
+#authpasswordError{
+    margin-left: 0.75rem;
+}
+/*#endregion*/
+
+/*#region sign up*/
+
+.sign_up{
+    border: 0.05rem solid #0392a4;
+    width: 13rem;
+    margin: 1.5rem;
+
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: #0392a4;
+
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.sign_up:hover{
+    background-color:rgba(255, 255, 255, 0.4);
+}
+
+/*#endregion*/

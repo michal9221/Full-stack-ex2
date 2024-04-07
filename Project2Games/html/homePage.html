@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="../css/homePageStyle.css" rel="stylesheet">
+        <link href="../css/generalStyle.css" rel="stylesheet">
+
+        <title>GAME HOME</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="..\icons\logo.png">
+                <h1 id="hi_user"></h1>
+            </div>
+            <a class="logout" href="login.html">
+                <img src="..\icons\logout.png">
+                <h1>Log Out</h1>
+            </a>
+            
+        </header>
+        <main>
+            <!--user info-->
+            <section class="user_info">
+                <div id="last_game_info" class="info">
+                    <h1>Last Game:</h1>
+                </div>
+                <div class="vertical_line"></div>
+                <div class="info">
+                    <h1>Date:</h1>
+                    <h6 id="last_date"></h6>
+                </div>
+                <div class="vertical_line"></div>
+                <div class="info">
+                    <h1>Score:</h1>
+                    <h6 id="your_score"><img src="..\icons\player.png"></h6>
+                    <h6 id="best_score"><img src="..\icons\best.png"></h6>
+                </div>
+            </section>
+
+            <!--games-->
+            <section class="games_grid">
+                <a class="imageContainer">
+                    <img class="game" src="..\images\game1.jpg">
+                    <h5>Chess</h5>
+                </a>
+                <a class="imageContainer" href="../html/4rowsPage.html">
+                    <img class="game" src="..\images\four_row.jpg">
+                    <h5>Four In A Row</h5>
+                </a>
+                <a class="imageContainer">
+                    <img class="game" src="..\images\game3.jpg">
+                    <h5>Snake</h5>
+                </a>
+                <a class="imageContainer">
+                    <img class="game" src="..\images\game4.jpg">
+                    <h5>Solitaire</h5>
+                </a>
+                <a class="imageContainer">
+                    <img class="game" src="..\images\game5.jpg">
+                    <h5>Find The Cheese</h5>
+                </a>
+                <a class="imageContainer" href="../html/Letters.html">
+                    <img class="game" src="..\images\letters.jpg">
+                    <h5>Letters</h5>
+                </a>
+                <a class="imageContainer">
+                    <img class="game" src="..\images\game7.jpg">
+                    <h5>Rush Houers</h5>
+                </a>
+                <a class="imageContainer">
+                    <img class="game" src="..\images\game8.jpg">
+                    <h5>PacMen</h5>
+                </a>
+            </section>
+        </main>
+
+        <script src="..\js\user_define.js"></script>
+        <script src="..\js\homePage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    display: block !important;
+}
+
+/* #region header section*/
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header > *{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+header .logo img{
+    margin-right: 1rem;
+    width: 4rem;
+}
+
+header .logo h1{
+    font-size: 1.5rem;
+    font-family: "Comic Sans MS";
+    font-weight: 600;
+}
+
+header .logout{
+    border: 0.12rem solid #0392a4;
+    border-radius: 0.6rem;
+    height: fit-content;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+header .logout:hover{
+    background-color:rgba(255, 255, 255, 0.4);
+
+}
+
+header .logout img{
+    margin-right: 0.5rem;
+    width: 2rem;
+}
+
+header .logout h1{
+    font-size: 1rem;
+    font-family: "Comic Sans MS";
+    font-weight: 400;
+}
+/*#endregion*/
+
+/*#region user info*/
+.user_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: auto;
+}
+
+.vertical_line {
+    width: 0.15rem; 
+    height: 80%;
+    background-color:#0392a4; 
+    margin: 0 20px; 
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.info h1{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Comic Sans MS";
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.info h6{
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Comic Sans MS";
+}
+
+.info > img{
+    width: 3rem;
+}
+
+.info h6 img{
+    width: 1rem;
+}
+/*#endregion*/
+
+/*#region games*/
+.games_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3rem;
+    margin: 5rem;
+    justify-content: center;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.game{
+    width: 100%;
+    height: auto;
+    border: 1.15rem solid #0392a4;
+    border-radius: 1.1rem;
+    transition: opacity 0.2s linear;
+}
+
+.imageContainer h5{
+    position: absolute;
+    bottom: 0;
+
+    border: 0.25rem solid #0392a4;
+    background-color: #e8e8e8;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.1rem;
+    min-width: 50%;
+    width: fit-content;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Comic Sans MS";
+
+}
+
+.game:hover{
+    opacity: 0.5;
+}
+
+/*#endregion*/
